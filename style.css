@@ -1,0 +1,71 @@
+  body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(232, 225, 197);
+  }
+  .calculator{
+    background-color: rgb(250, 250, 250);
+    border-radius: 10%;
+    padding: 20px;
+    width: 270px;
+    animation: pulsateBorder 2s infinite;
+  }
+  @keyframes pulsateBorder {
+    0%{
+      background-color: rgba(38, 35, 35, 0.847);
+    }
+    100%{
+      background-color: rgb(103, 110, 107);
+    }
+    
+  }
+
+  #result{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 254, 254, 0.4);
+    background-color: aliceblue;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 10px; 
+  }
+  .keypad{
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 7px;
+  }
+  button{
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 100%;
+    cursor: pointer;
+
+  }
+  button:hover{
+    background-color: rgb(39, 189, 146);
+    color: white;
+  }
+  .resetBtn{
+    color: rgb(145, 235, 48);
+    font-weight: bold;
+  }
+  .delBtn{
+    color: red;
+    font-weight: bold;
+  }
+  .opBtn{
+    color: red;
+    font-weight: bold;
+  }
+  
+   
